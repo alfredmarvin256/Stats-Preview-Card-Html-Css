@@ -81,14 +81,13 @@ span {
 
 @media only screen and (max-width: 700px) {
     body {
-        padding: 20px;
+        padding: 2rem;
     }
 
     .main-content {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        /* max-width: 400px; */
         flex-wrap: wrap;
     }
 
