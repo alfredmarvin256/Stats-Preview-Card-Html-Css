@@ -5,7 +5,6 @@
 body {
     font-size: 16px;
     font-family: 'Red Hat Display';
-    overflow: hidden;
 }
 
 h1 {
@@ -14,7 +13,7 @@ h1 {
     text-align: center;
 }
 
-span{
+span {
     color: hsl(223, 47%, 23%);
     text-align: center;
     font-weight: 700;
@@ -24,11 +23,11 @@ p {
     color: hsl(224, 23%, 55%);
 }
 
-.main-section{
+.main-section {
     grid-column: 2;
 }
 
-.sub-section{
+.sub-section {
     background-color: white;
 }
 
@@ -38,32 +37,32 @@ p {
 
 button {
     width: 100%;
-    border-radius:.6rem;
+    border-radius: .6rem;
     height: 2.5rem;
     border: none;
     font-weight: 900;
 }
 
-#proceed{
+#proceed {
     background-color: hsl(245, 75%, 52%);
     margin-top: 1rem;
     color: white;
 }
 
-#cancel{
+#cancel {
     color: hsl(224, 23%, 55%);
     background: inherit;
 }
 
-#proceed:hover{
+#proceed:hover {
     background-color: hsl(245, 75%, 70%);
 }
 
-#cancel:hover{
-    color:hsl(223, 47%, 23%) ;
+#cancel:hover {
+    color: hsl(223, 47%, 23%);
 }
 
-.pricing a:hover{
+.pricing a:hover {
     text-decoration: none;
     color: hsl(245, 75%, 70%);
 }
@@ -80,13 +79,11 @@ button {
 }
 
 .main-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     padding: 1rem;
+    max-width: 420px;
 }
 
-.sub-section{
+.sub-section {
     border-radius: 0 0 1rem 1rem;
     display: flex;
     flex-direction: column;
@@ -95,7 +92,7 @@ button {
     padding: 1rem 2rem;
 }
 
-.main-content{
+.main-content {
     text-align: center;
 }
 
@@ -118,7 +115,7 @@ button {
     gap: 1rem;
 }
 
-.attribution{
+.attribution {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,46 +124,49 @@ button {
 
 /* Small Phones */
 @media screen and (max-width:425px) {
-    body{
+    body {
         background-image: url(images/pattern-background-mobile.svg);
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
     }
 
-    .container{
+    .container {
         display: block;
     }
 }
 
 /* Larger phones and medium tabs */
-@media (min-width:425px) and (max-width:768px){
-    body{
-        background-image: url(images/pattern-background-mobile.svg);
+@media (min-width:425px) and (max-width:768px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: contain;
+        background-color: #e0e8ff;
     }
 
-    .container{
+    .container {
+        width: 100%;
+        min-height: 95vh;
         display: flex;
-        flex-wrap: wrap;
-        max-width: 410px;
-        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 /* Large tabs laptop and desktop(max-width:1440px) */
 @media screen and (min-width:768px) {
-    body{
+    body {
         background-image: url(images/pattern-background-desktop.svg);
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: contain;
+        background-color: #e0e8ff;
     }
 
-    .container{
+    .container {
         width: 100%;
-        height: auto;
+        min-height: 95vh;
         display: flex;
-        max-width: 410px;
-        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
 }
